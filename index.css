@@ -1,50 +1,105 @@
-body {
-    background-image: url("yarn.jpeg");
-    background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    height: 100vh;
+.neonText1 {  
+    color: white;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px blueviolet;
+    font-family: "Lucida Handwriting", cursive;
+    font-style: cursive;
 }
 
-.container {
-    background: white;
-    max-width: 80%;
-    margin: auto;
-    border: 3px solid black;
-    border-radius: 10px;
+.neonText2 {  
+   color: #fff;
+   text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    
+}
+
+
+body {
+    background-color: black;
+    background-size: cover;
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 h1 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    animation: flicker 1.5s infinite alternate;
+    animation-play-state: running
+}
+/*flickering Animation*/ 
+@keyframes flicker{
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
 
+
 h2 {
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 button {
-    border: 1px solid black;
+    border: none;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
     font-weight: bold;
     width: 200px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     border-radius: 5px;
 }
 
 #increment-btn {
-    background: #2C2891;
+    background: black;
+     border: 0.2rem solid #fff;
+  border-radius: .5rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem blue,
+              0 0 0.8rem blueviolet,
+              0 0 1rem #bc13fe,
+              inset 0 0 .5rem blue;
 }
 
 #save-btn {
-    background: #1C7947;
-}
-
-#save-el {
-    font-weight: bold;
+    background: black;
+     border: 0.2rem solid #fff;
+  border-radius: .5rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem teal,
+              0 0 0.8rem turquoise,
+              0 0 2.8rem teal,
+              inset 0 0 .3rem green;
 }
 
